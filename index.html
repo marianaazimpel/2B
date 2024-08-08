@@ -57,6 +57,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
+     <div class="swiper-pagition"></div>
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide"><img src="ApacheKafka.svg" alt="Livro apache kafka"></div>
@@ -72,18 +73,71 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <div class="swiper-button-next"></div>
   
     <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+
   </div>
+        <div class="card">
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Talvez você também se interesse por ....</h3>
+                    <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do google.</p>
+                </div>
+                <img src="angular.svg" class="descrição__imagem">
+                <div class=”card__botoes”>
+                    <!-- Primeira coluna -->
+                    <ul class=”botoes”>
+                    <li class=”botoes__item”><img src=”img/Favoritos.svg”
+                    
+                    alt=”Favoritar livro”></li>
+                    
+                    <li class=”botoes__item”><img src=”img/Compras.svg”
+                    
+                    alt=”Adicionar no carrinho de compras”></li>
+                    </ul>
+                    <a href=”#” class=”botoes__ancora”>Saiba mais</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+            <h2 class="topicos_titulos">Tópicos visitados recentemente</h2>
+            <ul class="topicos_lista">
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Android</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Marketing Digital</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Agile</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Startups</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">HTML e CSS</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Python</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">OO</a>
+                </li>
+                <li class="topicos_item">
+                    <a href="#" class="topicos_link">Java</a>
+                </li>
+            </ul>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script>
-    const swiper= new
-    swiper('.swiper',{
-    spaceBetween: 10,
-    slidesPerView:3,});
-    pagination:{
-        
-    }
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination:{
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
     </script>
 </body>
 </html>
