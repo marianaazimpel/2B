@@ -12,3 +12,24 @@
  -webkit-text-fill-color: transparent;
  background-clip: text;
 }
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contato__texto{
+    font-weight: 300;
+    margin: 1em 0;
+}
+.contato__email{
+    padding: 1em;
+    border: 1px solid var(--azul-degrade);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul-degrade);
+}
+.contato-email::placeholder{
+    font-family: var(--azul-degrade);
+    color: var(--azul-degrade);
+    background: url(Menu.svg) no-repeat;
+    padding: 2em;
+}
