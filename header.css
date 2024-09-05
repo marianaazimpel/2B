@@ -37,3 +37,46 @@
 .container_botao{
     display: none;
 }
+@media screen and ( min-width: 1024px )  {
+    .container_titulo,
+    .container_titulo-negrito{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo-negrito{
+        font-weight: 700;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes_item{
+        text-transform: uppercase;
+    }
+    .opcoes_link{
+        text-decoration: none;
+        color: var(--branco);
+    }
+    .container_imagem-transparente{
+        display: none;
+    }
+    .cabecalho__menu-hamburger{
+        display: none;
+    }
+    .opcoes_botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes_botao{
+        display: none;
+    }
+}
+.container__titulo{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
