@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraBooks</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +18,7 @@ rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 </head>
+
 <body>
     <header class="cabecalho">
        <div class="container">
@@ -68,11 +72,18 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             <a href="#" class="lista-menu_link">Design & UX</a>
         </li>
     </ul>
+
         </div>
         <div class="container">
-        <a href="#"><img src="Favoritos.svg" alt="Favoritos" class="container_imagem"></a>
-        <a href="#"><img src="Compras.svg" alt="Compras" class="container_imagem"></a>
-        <a href="#"><img src="Usuario.svg" alt="Perfil" class="container_imagem"></a>
+        <a href="#" class="container__link">
+            <img src="Favoritos.svg" alt="Favoritos" class="container_imagem">
+        <p class="container__texto">Minha Sacola</p>
+        </a>
+        <a href="#" class="container__link">
+            <img src="Compras.svg" alt="Compras" class="container_imagem"></a>
+            <p class="container__texto"> Meu Perfil </p>
+        <a href="#"><img src="Usuario.svg" alt="Perfil" class="container_link">
+        </a>
     </div>
 </header>
     <section class="banner">
@@ -83,6 +94,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
         <!-- Slider main container -->
+         <div class="carrossel__container"></div>
 <div class="swiper">
     <!-- Additional required wrapper -->
      <div class="swiper-pagition"></div>
@@ -156,20 +168,34 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
                 </li>
             </ul>
     </section>
+
     <section class="contato"> 
         <h2 class="contato-titulo">fique por dentro das novidades</h2>
         <p class="contato-texto">atulizaçoes de e-books novos Lançamentos</p>
         <input type="email" placeholder="cadastre-se email" class="contato-email">
+
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 3,
             pagination:{
+
                 el: '.swiper-pagination',
-                type: 'bullets',
+
+
+
+
+
+
+                
+                ul class="lista_rodape"
             }
+            <img src="" alt="logo casa do codigo">;
+            
+
         });
     </script> 
 </body>
