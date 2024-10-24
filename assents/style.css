@@ -65,7 +65,7 @@ footer p{
     color: var(--card-back-color);
     font-weight: 700;
 }
-.cartao:hover .cartao__contudo{
+.cartao.active .cartao__contudo{
     transform: rotate(180deg)
 }
 
@@ -74,13 +74,27 @@ footer p{
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .cartao__contudo_resposta{
     transform: rotate(180deg);
+    background-color: rgba(red, green, blue, alpha);
+    border: 4px solid var(--card-back-color);
+
 }
 
 .cartao__conteudo p{
     margin-top: 4rem;
     padding: 2rem;
+    font-size: 1,4vw;
+
+}
+@media(max-width:560px){
+    body{
+        background: url();
+    }
+    .cartao{
+        flex: 1 0 calc(100% -1rem);
+    }
 }
